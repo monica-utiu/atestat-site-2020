@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Despre Clinica Veterinară PetVet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--pt buton responsive -->
+    <meta charset="utf-8">
+  <style>
+    .mySlides {display:none}
+     img {vertical-align: middle;}
+     body { padding:1px; }
+  </style>
+</head>
+
+
+<body>
+
+<nav id="navbar">
+  <img src="imagini/logo.jpg" id="logo" alt="Logo">
+     <a href="index.html">Acasă</a>
+     <a class="active" href="Desprenoi.html">Despre noi</a>
+     <a href="Servicii.html">Servicii</a>
+     <a  href="Adoptie2.html">Adopție</a>
+   <a  href="Contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- javascript navbar -->
+<script>
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<div class="about-section">
+  <h1>Clinica Veterinară PetVet</h1>
+<p>
+Oferim servicii veterinare de cea mai înaltă calitate atât în cabinete, cât și la domiciliu, prin serviciul de Ambulanță, creat pentru a putea răspunde cât mai bine nevoilor dumneavoastră.</p>
+<p>
+Cabinetul dispune de cele mai înalte dotări care permit realizarea de analize complete de sânge, investigații imagistice și proceduri de tratament, care sunt indisponibile în alte cabinete veterinare.</p>
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="imagini/slide3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="imagini/slide5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="imagini/showcase4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="imagini/slide4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="imagini/slide2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="imagini/slide6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="imagini/slide7.jpg" style="width:100%">
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); //  4 secunde
+}
+</script>
+
+</div>
+<p>
+Echipa noastră de medici specialiști și asistenți veterinari îți stă la dipozitie pentru: consulații de specialitate, tratamente specifice, deplasare la domiciliu, analize veterinare de laborator, internări, vaccinări, microcipare și înregistrare RECS, eliberare pașaport UE, investigații specifice pentru cardiologie, chirurgie, stomatologie veterinară, deparazitări interne și externe, hemodializă veterinară – dializă peritoneală, radiologie veterinară, anestezie inhalatorie.</p>
+<p>
+De asemenea, în cadrul cabinetelor noastre vei găsi și un punct farmaceutic veterinar, în care poți găsi oricând tratamentul de care animăluțul tău are nevoie.
+</p>
+<p>
+  Pe lângă aceste servicii, avem o aripă de salvarea animalelor, îngrijirea lor și oferirea lor spre adopție.
+  </p>
+
+<div class="buton-programare">
+      <a href="Contact.html#P">
+      <h6>Pentru detalii sau programări, vă stăm la dispoziție la numerele de telefon de pe site!</h6>
+      </a>
+</div>
+
+<p>
+Vă așteptăm cu drag pentru ca dumneavostră și animalele voastre să fiți tratați așa cum se cuvine!</p>
+
+</div>
+
+
+
+<h2 style="text-align:center">Echipa noastră</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc1.jpg" alt="Jane" style="width:100%">
+      <div class="container-doc">
+        <h2>Doctor Maria Ghica</h2>
+        <p class="title">Director al clinicii PetVet</p>
+        <p>Profesionalism și experiență de 40 de ani.</p>
+        <p>ghica.maria.pv@yahoo.com</p>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc6.jpg"  style="width:100%">
+      <div class="container-doc">
+        <h2>Roșu Mihai</h2>
+        <p class="title">Director adjunct Clinica PetVet</p>
+        <p>Specialist în animale exotice.</p>
+        <p>rosu.mihai.pv@yahoo.com</p>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc5.jpg" style="width:100%">
+      <div class="container-doc">
+        <h2>Olar Ioana</h2>
+        <p class="title">Asistent</p>
+        <p>Șefa de promoție și dresor calificat.</p>
+        <p>olar.ioana.pv@yahoo.com</p>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc4.jpg" alt="Jane" style="width:100%">
+      <div class="container-doc">
+        <h2>Iobagiu Mariana</h2>
+        <p class="title">Șefă catedră ortopedie</p>
+        <p>Experiență și rezultate incredibile de 30 de ani și oferite în continuare.</p>
+        <p>iobagiu.mariana.pv@yahoo.com</p>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc2.jpg" alt="Mike" style="width:100%">
+      <div class="container-doc">
+        <h2>Istrate Ina si Rus Tudor</h2>
+        <p class="title">Rezidenți</p>
+        <p>Tineri pasionați și talentați, în pregătirea doctoratului.</p>
+        <br>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="imagini/doc3.jpg" alt="John" style="width:100%">
+      <div class="container-doc">
+        <h2>Dinu Miruna</h2>
+        <p class="title">Doctor catedră chirurgie</p>
+        <p>Specialist în chirurgie și stomatologie, numărul 3 în UE.</p>
+        <p>dinu.maria.pv@yahoo.com</p>
+        <p><a href="Contact.html#P"><button class="button">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+    <div class="f1">
+        <h5> CLINICA VETERINARĂ PETVET</h5>
+        <h7>Vă oferim un ambient plăcut, curat, cu aparatură medicală modernă care ne ajută să punem diagnostice corecte și să livrăm tratamentele necesare pentru a vă reda sănătatea.</h7>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.805645663185!2d21.225881315567154!3d45.755042179105445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677ffe4da623%3A0x1b745bb7a0191ad7!2sStrada%20Dimitrie%20Cantemir%2039%2C%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1588681703983!5m2!1sen!2sro" width="550" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="f1">
+        <h5> PROGRAM</h5>
+        <p>Luni 08:00 - 18:00 | Marți 12:00 - 20:00 | Miercuri 12:00 - 20:00 |</p>
+        <p> Joi 08:00 - 18:00 | Vineri 08:00 - 18:00</p>
+        <p>Adresa: str Dimitrie Cantemir nr 39, Timișoara, Timiș
+        </p>
+        <p>Telefon: 0752090909</p>
+        <p>Email: petvet.timisoara@yahoo.com</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--pt buton responsive -->
+<meta charset="utf-8">
+<head>
+	<title>Contact PetVet</title>
+</head>
+<body>
+<nav id="navbar">
+  <img src="imagini/logo.jpg" id="logo" alt="Logo">
+	 <a href="index.html">Acasa</a>
+	 <a href="Desprenoi.html">Despre noi</a>
+	 <a href="Servicii.html">Servicii</a>
+	 <a  href="Adoptie2.html">Adoptie</a>
+   <a class="active" href="Contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- javascript navbar -->
+<script>
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<div id="map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.805645663185!2d21.225881315567154!3d45.755042179105445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677ffe4da623%3A0x1b745bb7a0191ad7!2sStrada%20Dimitrie%20Cantemir%2039%2C%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1588681703983!5m2!1sen!2sro" width="1350" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<div class="contact">
+
+<div class="formular"><a id="P"></a>
+
+<form action="form.php" method="post">
+
+<div class="row">
+      <div class="col-25">
+        <label for="fname">Nume</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nume" name="nume" placeholder="Numele dumneavoastra..." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="telefon">Numar de telefon</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="tel" name="tel" placeholder="07xxxxxxxx" min="10" maxlength="10" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Email"  required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="programare">Data si ora</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="data" name="data" placeholder="Data"  required>
+        <input type="time" id="time" name="time" placeholder="Ora" min="08:00" max="17:45" step="900" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="animal">Vin la control cu</label>
+      </div>
+      <div class="col-75">
+        <select id="tipanimal" name="tipanimal">
+          <option value="caine">Caine</option>
+          <option value="pisica">Pisica</option>
+          <option value="altceva">Altceva</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mesaj">Informatii aditionale</label>
+      </div>
+      <div class="col-75">
+        <textarea id="mesaj" name="mesaj" placeholder="Adaugati mai multe specificatii(optional) " style="height:200px" maxlength="100"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Trimite">
+    </div>
+
+</form>
+
+</div>
+
+ <div class="informatii">
+     
+     <h3>PROGRAM CLINICA VETERINARA PETVET</h3>
+<p>Luni 08:00 - 18:00</p>
+<p> Marti 12:00 - 20:00 </p>
+<p> Miercuri 12:00 - 20:00 </p>
+<p> Joi 08:00 - 18:00</p>
+<p>Vineri 08:00 - 18:00</p>
+<hr>
+<br>
+  <h3>CONTACT PETVET:</h3>
+<p>Telefon CLINICA: 0752090909 ||  Telefon URGENTE: 0768.893.893</p>
+<p>Email: petvet.timisoara@yahoo.com</p>
+<p>Adresa: Str. Dimitrie Cantemir nr 39</p>
+<p>Oras: Timisoara</p>
+<p>Vezi adresa: Google Maps</p>
+
+<p>Serviciul de Ambulanta Veterinara PetVet va sta la dispozitie non-stop 24h/24h.</p>
+ </div>
+</div>
+
+<div class="footer">
+    <div class="f1">
+        <h5> CLINICA VETERINARA PETVET</h5>
+        <h7>Va oferim un ambient placut, curat, cu aparatura medicală modernă care ne ajută să punem diagnostice corecte si sa livram tratamentele necesare pentru a va reda sanatatea.</h7>
+        <br>
+        <div id="map2">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.805645663185!2d21.225881315567154!3d45.755042179105445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677ffe4da623%3A0x1b745bb7a0191ad7!2sStrada%20Dimitrie%20Cantemir%2039%2C%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1588681703983!5m2!1sen!2sro" width="550" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       </div>
+    </div>
+    <div class="f1">
+        <h5> PROGRAM</h5>
+        <p>Luni 08:00 - 18:00 | Marti 12:00 - 20:00 | Miercuri 12:00 - 20:00 |</p>
+        <p> Joi 08:00 - 18:00 | Vineri 08:00 - 18:00</p>
+        <p>Adresa: str Dimitrie Cantemir nr 39, Timisoara, Timis
+        </p>
+        <p>Telefon: 0752090909</p>
+        <p>Email: petvet.timisoara@yahoo.com</p>
+    </div>
+</div>
+</body>
+</html>

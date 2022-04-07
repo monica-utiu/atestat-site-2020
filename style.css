@@ -1,0 +1,638 @@
+ body{
+    background-color: #fff;    
+    font: normal 16px Arial, Helvetica ,sans-serif;
+    margin: 0;
+}
+#my-header
+{ background-color: #00b386;
+	color: white;
+	font: normal 30px;
+	text-align:center;
+	padding: 10px;
+  margin: 0px;
+ }
+
+ #navbar
+ {  background-color: #D9D9D9; /*#e2e9e9;*/
+ 	  color: #00b386;
+    margin: 0;
+    padding-right: 1px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 13px;
+    overflow: hidden;
+ }
+ #navbar a {
+  float: left ;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00b386;
+  border-radius: 4px;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  width: 8em;
+  margin-right: 3px;
+}
+
+
+#navbar a:hover {
+  color: #00b386;
+  background-color: #fff;
+}
+
+/* Pentru pagina pe care esti */
+#navbar a.active {
+  background-color: #00b386;
+  color: white;
+}
+
+#navbar img
+{
+	float: right;
+	height: 6em;
+	width: 6em;
+}
+#navbar .icon{ display:none; }
+
+@media only screen and (max-width: 800px) 
+{ #navbar a:not(:first-child) {display: none;}
+  #navbar a.icon {
+    float: right;
+    display: block;
+  }
+  #navbar img {display: none;}
+  #navbar a{
+      padding: 19px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar.responsive {position: relative;}
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+#showcase{
+	background-image: url('imagini/SLDR-lab.jpg');
+	background-color: #fff;
+	background-size: cover;
+	background-position: top;
+    /*padding: 1px;*/
+    padding: 10% 50% 10% 5%;
+    text-align: left;
+  }
+#showcase2{
+	background-image: url('imagini/showcase6.jpg');
+	background-color: #fff;
+	background-size: cover;
+	background-position: top;
+    padding: 1px;
+    padding: 10% 50% 10% 5%;
+}
+#footer{
+	color: #000;
+	background-color: #e2e9e9;
+	text-align: center;
+	margin:0;
+	padding: 1px;
+}
+#text h1{
+	color: #329286;
+	font-size: 30px;
+  font-weight: bold;
+  margin: 1em;
+
+}
+#text h2{
+	color: #000;
+	font-size: 18px;
+    /*padding: 10px 50px 0px 200px;*/
+    margin: 0;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+#main {
+	text-align: center;
+	background-color: white;
+}
+#main h1{
+	color: #00b386;
+}
+#main h2{
+	font-weight: normal;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+@media(max-width: 600px)
+{ #main{
+	width:100%;
+	float:none;
+	}
+  #text h1, text h2{
+	  paddind:0px;
+	  font-size: 18px;
+ }
+}
+ .wrapper{
+ 	padding: 20px;
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+ }
+ .container3{
+ 	margin:0;
+ 	padding: 50px 10px ;
+ 	background-color: #e2e9e9;
+ }
+ .container3 img{
+ 	
+ 	height: 8em;
+ 	width: auto;
+ }
+ .container3 a{
+ 	text-decoration: none;
+ 	color: black;
+ }
+ .container3 a:hover{
+    color: #00b386;
+ }
+ .containerg{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    justify-content: stretch;
+    align-items: stretch;
+ }
+
+ div.gallery img{
+ 	/*width: 20em;
+ 	height: 20em;*/
+ 	max-width: 100%;
+ 	height:auto;
+ }
+
+ .form-group{
+ 	padding-bottom: 15px;
+ }
+ .form{
+ 	padding-left: 20px;
+ }
+ .form-group label{
+ 	display: block;
+ }
+ .form-group input{
+ 	padding: 8px;
+ 	width: 100%;
+ }
+ .button{
+ 	background-color: #333;
+ 	color: #fff;
+ 	padding: 10px 15px;
+ 	border:none;
+ }
+ 
+
+}
+/*Pagina Despre noi */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px; 
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #00b386;
+  color: white;
+}
+.about-section p{
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.container-doc {
+  padding: 0 16px;
+}
+
+.container-doc::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #266e58;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container2 {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  opacity: 50%;
+  background-color: #fff;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+ /* Pagina Adoptie2 */
+
+.box1 h2{
+     font-weight: bold;
+     color: #266e58;
+     text-align: center;
+}
+
+.line a{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #266e58;
+  text-decoration: none;
+  color: #fff;
+}
+ 
+div.gallery{
+  border: 3px solid #D9D9D9;
+}
+div.gallery:hover {
+  border: 3px solid #266e58;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+  object-position: left;
+  }
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  display: grid;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: grid;
+  clear: both;
+}
+
+
+
+/*Pagina servicii cu meniu*/
+.servicii{
+	display: grid;
+	grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+    padding: 20px;
+    background-color: #e2e9e9;
+ }
+ #sidemenu{
+ 	background-color: #266e58;
+
+ }
+ #sidemenu h2{
+ 	padding-left: 10%;
+ 	color: #e2e9e9;
+ }
+ #sidemenu ul{
+ 	list-style-type: none;
+ }
+ #sidemenu li{
+ 	padding-bottom: 10%;
+ }
+ #sidemenu a{
+ 	text-decoration: none;
+ 	color: #fff;
+ }
+ #sidemenu a:hover{
+ 	color: #266e58;
+ 	background-color: #e2e9e9;
+ 	padding: 10px;
+  border-radius: 4px;
+   }
+
+
+.footer{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 1em;
+	padding: 0px;
+	background-color: #c5d3d3;
+	text-align: left;
+	padding-left:30px;
+	font-size: 15px;
+  width:100%;
+}
+/*buton pagina servicii*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 300px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #266e58;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.buton-programare{
+  background-color: #266e58;
+  color: #e2e9e9;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:100%;
+  text-align: center;
+}
+
+.buton-programare a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+
+}
+.buton-programare a:hover{
+  color:  #266e58;
+}
+
+.buton-programare:hover{
+  color: #266e58;
+  background-color: #e2e9e9;
+}
+#myBtn:hover {
+  background-color: #e2e9e9;
+  color: #266e58;
+}
+
+/*Descrieri pagina servicii*/
+.element{
+	padding: 5%;
+
+}
+.element:nth-child(odd){
+	background: #c5d3d3;
+}
+
+.farmacie{
+   margin: 3px #266e58;
+   
+}
+
+/* Harta contact */
+#map2{
+  position: relative;
+  overflow: hidden;
+  width: 550px;
+  height: 100px;
+}
+#map2.iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#map{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#map.iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.informatii{
+  background-color: #f2f2f2;
+  padding-left: 10px; 
+  border-radius: 5px;
+  padding: 20px;
+}
+.informatii h3{
+  color:#266e58;
+}
+@media only screen and (max-width: 500px) {
+  .f1 {
+    width: 100%;
+  }
+  .f1 p,h3,h7{
+    font-size: 10px;
+  }
+  #map2{
+    width:100%;
+    height: 50px;
+  }
+}
+.formular{
+  padding-left: 10px; 
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* style formular */
+input[type=text],input[type=tel], input[type=email], input[type=date], input[type=time], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #266e58;
+  color: #e2e9e9;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

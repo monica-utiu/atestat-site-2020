@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--pt buton responsive -->
+<meta charset="utf-8">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+body{
+  background-color: #f2f2f2;
+}
+ 
+</style>
+<head>
+     <title>Adopție PetVet</title>
+     
+</head>
+<body>
+	<nav id="navbar">
+  <img src="imagini/logo.jpg" id="logo" alt="Logo">
+   <a href="index.html">Acasă</a>
+   <a href="Desprenoi.html">Despre noi</a>
+   <a href="Servicii.html">Servicii</a>
+   <a  class="active" href="Adoptie2.html">Adopție</a>
+   <a  href="Contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- javascript navbar -->
+<script>
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<div class="box1">
+ <h2 style="text-align: center">Animalele noastre recent adoptate</h2>
+
+
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="imagini/CA1.jpg" style="width:100%">
+  <div class="text">Lola, cățel salvat primit de o familie iubitoare</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="imagini/CA2.jpg" style="width:100%">
+  <div class="text">Veal, a scăpat de anxietate de când a fost adoptat</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="imagini/CA3.jpg" style="width:100%">
+  <div class="text">Bălosu și-a găsit un stăpân la fel de sedentar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="imagini/CA13.jpeg" style="width:100%">
+  <div class="text">Pufi a fost și a primit cadoul perfect de Crăciun, o familie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="imagini/CA11.jpg" style="width:100%">
+  <div class="text">Persida și-a revenit complet după traumele trecute.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="imagini/CA12.jpg" style="width:100%">
+  <div class="text">Huan și Diva au fost nedespărtiti și la adoptare.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="imagini/CA14.jpg" style="width:100%">
+  <div class="text">Bella și Pufi așteaptă puișori alături de o nouă familie</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+</div>
+</div>
+
+<h2 style="text-align: center">O galerie cu animăluțele noastre care își caută un stăpân</h2><p></p>
+<br>
+<div class="line">
+<h4 style="text-align: center"> <a href="Contact.html" style="color: black text-decoration: none ">Dacă doriți să adoptați vă rugăm vizitați-ne sau programați telefonic o întalnire la adăpostul din cadrul clinicii noastre</a></h4>
+</div>
+<br>
+<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog1.jpg">
+      <img src="imagini/Dog1.jpg" alt="Catel talie mica maro" width="600" height="400">
+    </a>
+    <div class="desc">Catelusa cu pedigree imi caut o casa!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog2.jpg">
+      <img src="imagini/Dog2.jpg" alt="Catel salvat" width="600" height="400">
+    </a>
+    <div class="desc">Catel 2 luni salvat imi caut o familie iubitoare!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog3.jpg">
+      <img src="imagini/Dog3.jpg" alt="Pui husky" width="600" height="400">
+    </a>
+    <div class="desc">Puiuti husky de 2 saptamani, cautam casa!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog4.jpg">
+      <img src="imagini/Dog4.jpg" alt="Catel negru la piscina" width="600" height="400">
+    </a>
+    <div class="desc">Catelus iubitor de apa salvat doresc sa fiu adoptat!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog5.jpg">
+      <img src="imagini/Dog5.jpg" alt="Catel corgi" width="600" height="400">
+    </a>
+    <div class="desc">Pui corgi cu pedigree vreau sa fiu iubit!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog6.jpg">
+      <img src="imagini/Dog6.jpg" alt="Caine adult alb" width="600" height="400">
+    </a>
+    <div class="desc">Caine salvat inteligent si iubitor caut o noua casa!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog7.jpg">
+      <img src="imagini/Dog7.jpg" alt="Pui labrador" width="600" height="400">
+    </a>
+    <div class="desc">Pui labrador pedigree jucaus dornic de parteneri de joaca!</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog8.jpg">
+      <img src="imagini/Dog8.jpg" alt="Catel Stafforshire" width="600" height="400">
+    </a>
+    <div class="desc">Puiut Stafforshire caut stapani activi si iubitori!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog9.jpg">
+      <img src="imagini/Dog9.jpg" alt="Catel cocker spaniol" width="600" height="400">
+    </a>
+    <div class="desc">Catel fotogenic de 6 luni vreau sa iti fac viata mai buna!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog10.jpg">
+      <img src="imagini/Dog10.jpg" alt="Catel golden retriever jucaus">
+    </a>
+    <div class="desc">Retriever sociabil ce cauta multe mangaieri pe burtica</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog11.jpg">
+      <img src="imagini/Dog11.jpg" alt="Catel mic maro" width="600" height="400">
+    </a>
+    <div class="desc">Puiut adorabil caut casa cu stapani dragastosi!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagini/Dog12.jpg">
+      <img src="imagini/Dog12.jpg" alt="Caine husky adult" width="600" height="400">
+    </a>
+    <div class="desc">Husky educat si afectuos caut noi stapani!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br>
+<br>
+<br>
+
+<div class="footer">
+    <div class="f1">
+        <h5> CLINICA VETERINARA PETVET</h5>
+        <h7>Va oferim un ambient placut, curat, cu aparatura medicală modernă care ne ajută să punem diagnostice corecte si sa livram tratamentele necesare pentru a va reda sanatatea.</h7>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.805645663185!2d21.225881315567154!3d45.755042179105445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677ffe4da623%3A0x1b745bb7a0191ad7!2sStrada%20Dimitrie%20Cantemir%2039%2C%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1588681703983!5m2!1sen!2sro" width="550" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="f1">
+        <h5> PROGRAM</h5>
+        <p>Luni 08:00 - 18:00 | Marti 12:00 - 20:00 | Miercuri 12:00 - 20:00 |</p>
+        <p> Joi 08:00 - 18:00 | Vineri 08:00 - 18:00</p>
+        <p>Adresa: str Dimitrie Cantemir nr 39, Timisoara, Timis
+        </p>
+        <p>Telefon: 0752090909</p>
+        <p>Email: petvet.timisoara@yahoo.com</p>
+    </div>
+</div>
+
+</body>
+</html>
